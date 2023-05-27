@@ -2,11 +2,11 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 import { cartVisbilityActins } from "./catVisibility";
-const initialState = [];
+// const initialState = [];
 
 const cartSlice = createSlice({
   name: "cart",
-  initialState,
+  initialState: {},
   reducers: {
     onAdd(state, action) {
       const item = state.find((item) => item.id === action.payload.id);
